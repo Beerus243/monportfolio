@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Kelasi",
-		"description": "Ceci est application web qui permet aux parents de suivre l'évolution scolaire de leurs enfants.",
+		"description": "Ceci est un application web qui permet aux parents de suivre l'évolution scolaire de leurs enfants.",
 		"type": "Monopage",
 		"technologie": "HTML, CSS, Javascript, MySql, Php",
 		"link": "https://https://kelasi.vercel.app/",
