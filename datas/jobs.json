@@ -1,0 +1,62 @@
+[
+    {
+        "id": 0,
+        "compagny": "ZandoPourTous",
+        "image": null,
+        "type": "Responsable Technique & Frontend",
+        "tasks": [
+            "Configuration des apis",
+            "Pages et Interfaces Réalistes",
+            "Composants UI réutilisables",
+            "Gestion de l’état et logique métier",
+            "Connexion à une API externe ou backend"
+        ],
+        "roles": [
+            "developpeur Frontend",
+            "devOps"
+        ],
+        "period": "Janvier.2025 - aujourd'hui",
+        "achievements": [
+            "Newbrain"
+            
+        ],
+        "technologie": [
+            "flutter",
+            "React",
+            "git",
+            "github",
+            "digital ocean"
+        ]
+    },
+    {
+        "id": 0,
+        "compagny": "kelasi",
+        "image": null,
+        "type": "Responsable Technique & Frontend",
+        "tasks": [
+            "développent web",
+            "developpement des apis",
+            "conception de système",
+            "designer des applications mobiles",
+            "Base des données"
+        ],
+        "roles": [
+            "developpeur mobile et backend",
+            "devOps",
+            "IT"
+        ],
+        "period": "juillet.2020 - septembre.2022",
+        "achievements": [
+            "Kelasi web application",
+           
+            "conception et modélisation de ces deux application (système)",
+            "design des application"
+        ],
+        "technologie": [
+            "php",
+            "mysql",
+            "git",
+            "github"
+        ]
+    }
+]

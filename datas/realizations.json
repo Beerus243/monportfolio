@@ -1,0 +1,53 @@
+[
+	{
+		"name": "Kelasi",
+		"description": "Ceci est application web qui permet aux parents de suivre l'évolution scolaire de leurs enfants.",
+		"type": "Monopage",
+		"technologie": "HTML, CSS, Javascript, MySql, Php",
+		"link": "https://https://kelasi.vercel.app/",
+		"sourceCode": "https://github.com/",
+		"frame": "Pédagogique",
+		"status": "en dev"
+	},
+	{
+		"name": "Rdv",
+		"description": "Ceci est un application de rencontre",
+		"type": "Monopage",
+		"technologie": "Flutter, Firebase",
+		"link": " https://github.com/",
+		"sourceCode": "https://github.com/",
+		"frame": "Appli de Rencontre",
+		"status": "en dev"
+	},
+	{
+		"name": "Rexal",
+		"description": "Ceci est un site pour la vente des Pop Corn",
+		"type": "Monopage",
+		"technologie": "HTML, CSS, Boostrap",
+		"link": "https://rexal.vercel.app//",
+		"sourceCode": "https://github.com/",
+		"frame": "Boutique",
+		"status": "Finis"
+	},
+	{
+		"name": "ZandoMarket",
+		"description": "Ceci est un MarketPlace",
+		"type": "Achat et Vente",
+		"technologie": "Next.js",
+		"link": "https://zandomarket-flax.vercel.app/",
+		"sourceCode": "https://github.com/Beerus243/",
+		"frame": "Personnel",
+		"status": "en dev"
+	},
+
+	{
+		"name": "Fabrice Malanga",
+		"description": "Voici les codes sources de l'actuelle page ou vous êtes. Ceci est mon portefolio.",
+		"type": "Application web",
+		"technologie": "Next.js, typescript",
+		"link": "https://teddycubaka.vercel.app/",
+		"sourceCode": "https://github.com/Beerus243/portefolio.git",
+		"frame": "Professionnel",
+		"status": "en prod"
+	}
+]
