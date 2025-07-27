@@ -59,7 +59,10 @@ export default function Navbar() {
           <div className="bg-[#123853] h-fit w-fit relative rounded-3xl z-50 flex flex-col items-end p-2.5">
             <div className="text-white"><BsTelephone className="m-auto" size="30px" /></div>
             <div className="z-50 p-2.5 flex flex-col gap-5">
-              <div
+              <a
+                href="https://wa.me/243831115891"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3"
                 onClick={() => {
                   navigator.clipboard.writeText("+243 831 115 891");
@@ -69,8 +72,9 @@ export default function Navbar() {
               >
                 {copy.phone ? <BsCheckCircleFill size={20} /> : <FiCopy size={20} />}
                 +243 831 115 891{" "}
-              </div>
-              <div
+              </a>
+              <a
+                href="mailto:malangafabrice@gmail.com"
                 className="flex items-center gap-3"
                 onClick={() => {
                   navigator.clipboard.writeText("malangafabrice@gmail.com");
@@ -80,7 +84,7 @@ export default function Navbar() {
               >
                 {copy.mail ? <BsCheckCircleFill size={20} /> : <FiCopy size={20} />}
                 malangafabrice@gmail.com{" "}
-              </div>
+              </a>
             </div>
           </div>
         ) : <div className="h-[50px] w-[50px] flex justify-center items-center text-white"><BsTelephone className="m-auto" size="30px" /></div>}
