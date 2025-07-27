@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { BsTelephone, BsCheckCircleFill } from "react-icons/bs";
+import { BsTelephone, BsCheckCircleFill, BsWhatsapp } from "react-icons/bs";
 import { FiCopy } from "react-icons/fi";
+import { SiGmail } from "react-icons/si";
 
 interface CopyType {
   mail: boolean;
@@ -63,25 +64,27 @@ export default function Navbar() {
                 href="https://wa.me/243831115891"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3"
+                className="flex items-center gap-3 text-white"
                 onClick={() => {
                   navigator.clipboard.writeText("+243 831 115 891");
                   setCopy({ ...copy, phone: true });
                   setTimeout(() => setCopy({ ...copy, phone: false }), 2000);
                 }}
               >
+                <BsWhatsapp size={20} />
                 {copy.phone ? <BsCheckCircleFill size={20} /> : <FiCopy size={20} />}
                 +243 831 115 891{" "}
               </a>
               <a
                 href="mailto:malangafabrice@gmail.com"
-                className="flex items-center gap-3"
+                className="flex items-center gap-3 text-white"
                 onClick={() => {
                   navigator.clipboard.writeText("malangafabrice@gmail.com");
                   setCopy({ ...copy, mail: true });
                   setTimeout(() => setCopy({ ...copy, mail: false }), 2000);
                 }}
               >
+                <SiGmail size={20} />
                 {copy.mail ? <BsCheckCircleFill size={20} /> : <FiCopy size={20} />}
                 malangafabrice@gmail.com{" "}
               </a>
