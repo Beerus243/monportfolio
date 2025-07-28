@@ -17,7 +17,7 @@ const careerArray: DescriptiveButton[] = [
 		name: "Scolaire",
 		icon: TbSchoolOff,
 		content:
-			"Fabrice a fait ses études humanitaires au collège saint Gabriel, a kinshasa. Il a finit en option Biochimie avec un diplôme de 68% en 2018. Après avoir obtenu son diplôme d'État. Il a toujours su que l'informatique était sa passion et a commencé ses études supérieurs à L'ESMICOM où en 2022 il finira par décrocher son diplome de Graduat.",
+			"J’ai effectué ma scolarité au Collège Saint Gabriel à Kinshasa, où j’ai obtenu mon diplôme d’État en Biochimie avec 68% en 2018. Passionné d’informatique, j’ai poursuivi mes études supérieures à l’ESMICOM et décroché mon diplôme de Graduat en 2022.",
 		mobileName: "Scolaire",
 	},
 	{
@@ -25,7 +25,7 @@ const careerArray: DescriptiveButton[] = [
 		name: "Extra-Scolaire",
 		icon: TbSchool,
 		content:
-			"En déhors de la scolarité, Fabrice fait et a fait plusieurs activités. Depuis ses 13 ans, il a fait du karaté Shotokan et a bien-sûr beaucoup progressé dans le mouvement, passionné de la Callisthénie Fabrice continue de travailler chaque jour quand il a un peu de temps libre.",
+			"En dehors du parcours académique, je pratique le karaté Shotokan depuis l’adolescence et je m’investis dans la callisthénie dès que j’ai du temps libre. Ces activités m’apportent rigueur, discipline et équilibre au quotidien.",
 		mobileName: "Extra-Scol.",
 	},
 	{
@@ -33,7 +33,7 @@ const careerArray: DescriptiveButton[] = [
 		name: "Professionnelle",
 		icon: MdWorkOutline,
 		content:
-			"Dans le domaine Professionnel Fabrice travaille entant que Développeur web et Mobile pour l'association ZandoPourTous, et passer le reste du temps à donner des cours à domicile sur la conception des bases de donnée.",
+			"Sur le plan professionnel, j’occupe le poste de développeur web et mobile pour l’association ZandoPourTous. J’interviens également en tant que formateur à domicile, notamment sur la conception de bases de données.",
 		mobileName: "Profession.",
 	},
 ];

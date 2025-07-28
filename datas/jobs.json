@@ -5,58 +5,56 @@
         "image": null,
         "type": "Responsable Technique & Frontend",
         "tasks": [
-            "Configuration des apis",
-            "Pages et Interfaces Réalistes",
-            "Composants UI réutilisables",
-            "Gestion de l’état et logique métier",
-            "Connexion à une API externe ou backend"
+            "Configuration et intégration d’APIs",
+            "Création de pages et interfaces interactives",
+            "Développement de composants UI réutilisables",
+            "Gestion de l’état applicatif et de la logique métier",
+            "Connexion à des services externes et backends"
         ],
         "roles": [
-            "developpeur Frontend",
-            "devOps"
+            "Développeur Frontend",
+            "DevOps"
         ],
-        "period": "Janvier.2025 - aujourd'hui",
+        "period": "Janvier 2025 - aujourd'hui",
         "achievements": [
-            "Newbrain"
-            
+            "Déploiement du projet Newbrain"
         ],
         "technologie": [
-            "flutter",
+            "Flutter",
             "React",
-            "git",
-            "github",
-            "digital ocean"
+            "Git",
+            "GitHub",
+            "Digital Ocean"
         ]
     },
     {
-        "id": 0,
-        "compagny": "kelasi",
+        "id": 1,
+        "compagny": "Kelasi",
         "image": null,
         "type": "Responsable Technique & Frontend",
         "tasks": [
-            "développent web",
-            "developpement des apis",
-            "conception de système",
-            "designer des applications mobiles",
-            "Base des données"
+            "Développement web et mobile",
+            "Conception et développement d’APIs",
+            "Modélisation de systèmes",
+            "Design d’applications mobiles",
+            "Gestion et optimisation de bases de données"
         ],
         "roles": [
-            "developpeur mobile et backend",
-            "devOps",
+            "Développeur mobile & backend",
+            "DevOps",
             "IT"
         ],
-        "period": "juillet.2020 - septembre.2022",
+        "period": "Juillet 2020 - Septembre 2022",
         "achievements": [
-            "Kelasi web application",
-           
-            "conception et modélisation de ces deux application (système)",
-            "design des application"
+            "Développement de l’application web Kelasi",
+            "Conception et modélisation de deux applications métiers",
+            "Design des interfaces utilisateurs"
         ],
         "technologie": [
-            "php",
-            "mysql",
-            "git",
-            "github"
+            "PHP",
+            "MySQL",
+            "Git",
+            "GitHub"
         ]
     }
 ]

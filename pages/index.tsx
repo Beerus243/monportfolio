@@ -10,6 +10,7 @@ import { BiArrowToTop } from "react-icons/bi";
 import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import ScrollToTop from "react-scroll-up";
+import SkillsSection from "../components/SkillsSection";
 
 export default function Home() {
   const [scrollingIsHeigh, setScrollingIsHeigh] = useState<boolean>(false);
@@ -60,7 +61,7 @@ export default function Home() {
         </ScrollToTop>
         <Achievement />
         <Career />
-        <Skills />
+        <SkillsSection />
         <Footer />
       </main>
     </>

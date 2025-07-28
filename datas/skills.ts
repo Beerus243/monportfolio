@@ -1,232 +1,275 @@
 import { BsGithub } from "react-icons/bs";
 import { DiCss3 } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
-import { AiFillHtml5, AiOutlineConsoleSql } from "react-icons/ai";
+import { AiFillHtml5 } from "react-icons/ai";
 import { FaNodeJs, FaGitAlt } from "react-icons/fa";
 import {
-	SiPhp,
-	SiTypescript,
-	SiPassport,
-	SiSocketdotio,
-	SiReact,
-	SiNextdotjs,
-	SiWordpress,
-	SiFigma,
-	SiMysql,
-	SiMongodb,
-	SiAdobephotoshop,
-	SiAdobeillustrator,
-	SiAsana,
-	SiVisualstudiocode,
-	SiMicrosoftexcel,
-	SiMicrosoftword,
-	SiDiscord,
-	SiLinux,
-	SiUbuntu,
-	SiCanva,
-	SiPython,
-	SiDjango,
-	SiSqlite,
-	SiGitlab,
-	SiGmail,
-	SiSlack,
-	SiGoogledrive,
-	SiGooglesheets,
-	SiGooglecalendar,
-	SiGooglechrome,
-	SiFirefox,
-	SiGooglekeep,
-	SiKalilinux,
+    SiPhp,
+    SiTypescript,
+    SiReact,
+    SiNextdotjs,
+    SiFigma,
+    SiMysql,
+    SiMongodb,
+    SiAdobephotoshop,
+    SiAdobeillustrator,
+    SiAsana,
+    SiVisualstudiocode,
+    SiMicrosoftexcel,
+    SiMicrosoftword,
+    SiDiscord,
+    SiLinux,
+    SiCanva,
+    SiPython,
+    SiSqlite,
+    SiGitlab,
+    SiGmail,
+    SiSlack,
+    SiGoogledrive,
+    SiGooglechrome,
+    SiFirefox,
+    SiKalilinux,
+    SiFlutter,
+    SiDart,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 
 interface LocalData {
-	name: string;
-	icon: IconType;
-	color: string;
+    name: string;
+    icon: IconType;
+    color: string;
+    category: "Web" | "Mobile" | "BDD" | "Système" | "Design" | "Outils" | "Versioning" | "Langage";
+    subcategory?: string;
 }
 
 const skills: LocalData[] = [
-	{
-		name: "HTML",
-		icon: AiFillHtml5,
-		color: "#e34c26",
-	},
-	{
-		name: "CSS",
-		icon: DiCss3,
-		color: "#264de4",
-	},
-	{
-		name: "JavaScript",
-		icon: IoLogoJavascript,
-		color: "#f0db4f",
-	},
-	{
-		name: "TypeScript",
-		icon: SiTypescript,
-		color: "#007acc",
-	},
-	{
-		name: "PHP",
-		icon: SiPhp,
-		color: "#8993be",
-	},
-	{
-		name: "Python",
-		icon: SiPython,
-		color: "#346fa0",
-	},
-	{
-		name: "Node.js",
-		icon: FaNodeJs,
-		color: "#3c873a ",
-	},
-	{
-		name: "React.js",
-		icon: SiReact,
-		color: "#07237c",
-	},
-	{
-		name: "React Native",
-		icon: SiReact,
-		color: "#436cf3",
-	},
-	{
-		name: "next.js",
-		icon: SiNextdotjs,
-		color: "#000000",
-	},
-	{
-		name: "Django",
-		icon: SiDjango,
-		color: "#003c2a",
-	},
-	{
-		name: "Canva",
-		icon: SiCanva,
-		color: "#21759b",
-	},
-	{
-		name: "Git",
-		icon: FaGitAlt,
-		color: "#f34f29",
-	},
-	{
-		name: "Github",
-		icon: BsGithub,
-		color: "#000000",
-	},
-	{
-		name: "Gitlab",
-		icon: SiGitlab,
-		color: "#db4128",
-	},
-	{
-		name: "Mongodb",
-		icon: SiMongodb,
-		color: "#049024",
-	},
-	{
-		name: "SQL",
-		icon: AiOutlineConsoleSql,
-		color: "#081c7b",
-	},
-	{
-		name: "MySQL",
-		icon: SiMysql,
-		color: "#667ef4",
-	},
-	{
-		name: "Sqlite",
-		icon: SiSqlite,
-		color: "#003a55",
-	},
-	{
-		name: "Ms Excel",
-		icon: SiMicrosoftexcel,
-		color: "#10793F",
-	},
-	{
-		name: "Ms Word",
-		icon: SiMicrosoftword,
-		color: "#1B5EBE",
-	},
-	{
-		name: "Google Sheet",
-		icon: SiGooglesheets,
-		color: "#1d9e5f",
-	},
-	{
-		name: "Google keep",
-		icon: SiGooglekeep,
-		color: "#edae00",
-	},
-	{
-		name: "A. Illustrator",
-		icon: SiAdobeillustrator,
-		color: "#49021F",
-	},
-	{
-		name: "A. Photoshop",
-		icon: SiAdobephotoshop,
-		color: "#001E36",
-	},
-	{
-		name: "Gmail",
-		icon: SiGmail,
-		color: "#e34133",
-	},
-	{
-		name: "Slack",
-		icon: SiSlack,
-		color: "#481449",
-	},
-	{
-		name: "Discord",
-		icon: SiDiscord,
-		color: "#565def",
-	},
-	{
-		name: "Asana",
-		icon: SiAsana,
-		color: "#F06A6A",
-	},
-	{
-		name: "Calendar",
-		icon: SiGooglecalendar,
-		color: "#0061cd",
-	},
-	{
-		name: "Vs Code",
-		icon: SiVisualstudiocode,
-		color: "#0078d7",
-	},
-	{
-		name: "Google drive",
-		icon: SiGoogledrive,
-		color: "#00a745",
-	},
-	{
-		name: "Chrome",
-		icon: SiGooglechrome,
-		color: "#dc392d",
-	},
-	{
-		name: "Mozilla firefox",
-		icon: SiFirefox,
-		color: "#d25424",
-	},
-	{
-		name: "Kali Linux",
-		icon: SiKalilinux,
-		color: "#e95420",
-	},
-	{
-		name: "Linux",
-		icon: SiLinux,
-		color: "#1793d1",
-	},
+    // Langages de programmation & Frameworks
+    {
+        name: "Python",
+        icon: SiPython,
+        color: "#346fa0",
+        category: "Langage",
+        subcategory: "Back-end",
+    },
+    {
+        name: "PHP",
+        icon: SiPhp,
+        color: "#8993be",
+        category: "Langage",
+        subcategory: "Back-end",
+    },
+    {
+        name: "JavaScript",
+        icon: IoLogoJavascript,
+        color: "#f0db4f",
+        category: "Langage",
+        subcategory: "Front-end",
+    },
+    {
+        name: "TypeScript",
+        icon: SiTypescript,
+        color: "#007acc",
+        category: "Langage",
+        subcategory: "Front-end",
+    },
+    {
+        name: "Dart",
+        icon: SiDart,
+        color: "#0175C2",
+        category: "Langage",
+        subcategory: "Mobile",
+    },
+    {
+        name: "React.js",
+        icon: SiReact,
+        color: "#61dafb",
+        category: "Langage",
+        subcategory: "Front-end Framework",
+    },
+    {
+        name: "Next.js",
+        icon: SiNextdotjs,
+        color: "#000000",
+        category: "Langage",
+        subcategory: "Front-end Framework",
+    },
+    {
+        name: "Node.js",
+        icon: FaNodeJs,
+        color: "#3C873A",
+        category: "Langage",
+        subcategory: "Back-end Framework",
+    },
+
+    // Web
+    {
+        name: "HTML5",
+        icon: AiFillHtml5,
+        color: "#e34c26",
+        category: "Web",
+    },
+    {
+        name: "CSS3",
+        icon: DiCss3,
+        color: "#264de4",
+        category: "Web",
+    },
+
+    // Mobile
+    {
+        name: "React Native",
+        icon: SiReact,
+        color: "#61dafb",
+        category: "Mobile",
+    },
+    {
+        name: "Flutter",
+        icon: SiFlutter,
+        color: "#02569B",
+        category: "Mobile",
+    },
+
+    // Base de Données
+    {
+        name: "MySQL",
+        icon: SiMysql,
+        color: "#00758f",
+        category: "BDD",
+    },
+    {
+        name: "MongoDB",
+        icon: SiMongodb,
+        color: "#47A248",
+        category: "BDD",
+    },
+    {
+        name: "SQLite",
+        icon: SiSqlite,
+        color: "#003b57",
+        category: "BDD",
+    },
+
+    // Système & Sécurité
+    {
+        name: "Linux",
+        icon: SiLinux,
+        color: "#1793d1",
+        category: "Système",
+    },
+    {
+        name: "Kali Linux",
+        icon: SiKalilinux,
+        color: "#557C94",
+        category: "Système",
+    },
+
+    // Versioning
+    {
+        name: "Git",
+        icon: FaGitAlt,
+        color: "#f34f29",
+        category: "Versioning",
+    },
+    {
+        name: "GitHub",
+        icon: BsGithub,
+        color: "#181717",
+        category: "Versioning",
+    },
+    {
+        name: "GitLab",
+        icon: SiGitlab,
+        color: "#fc6d26",
+        category: "Versioning",
+    },
+
+    // Design
+    {
+        name: "Figma",
+        icon: SiFigma,
+        color: "#F24E1E",
+        category: "Design",
+    },
+    {
+        name: "Adobe Photoshop",
+        icon: SiAdobephotoshop,
+        color: "#001E36",
+        category: "Design",
+    },
+    {
+        name: "Adobe Illustrator",
+        icon: SiAdobeillustrator,
+        color: "#FF9A00",
+        category: "Design",
+    },
+    {
+        name: "Canva",
+        icon: SiCanva,
+        color: "#00C4CC",
+        category: "Design",
+    },
+
+    // Outils
+    {
+        name: "VS Code",
+        icon: SiVisualstudiocode,
+        color: "#0078d7",
+        category: "Outils",
+    },
+    {
+        name: "Slack",
+        icon: SiSlack,
+        color: "#4A154B",
+        category: "Outils",
+    },
+    {
+        name: "Discord",
+        icon: SiDiscord,
+        color: "#5865F2",
+        category: "Outils",
+    },
+    {
+        name: "Asana",
+        icon: SiAsana,
+        color: "#F06A6A",
+        category: "Outils",
+    },
+    {
+        name: "Google Drive",
+        icon: SiGoogledrive,
+        color: "#4285F4",
+        category: "Outils",
+    },
+    {
+        name: "Google Chrome",
+        icon: SiGooglechrome,
+        color: "#4285F4",
+        category: "Outils",
+    },
+    {
+        name: "Firefox",
+        icon: SiFirefox,
+        color: "#FF7139",
+        category: "Outils",
+    },
+    {
+        name: "Gmail",
+        icon: SiGmail,
+        color: "#D14836",
+        category: "Outils",
+    },
+    {
+        name: "Microsoft Excel",
+        icon: SiMicrosoftexcel,
+        color: "#217346",
+        category: "Outils",
+    },
+    {
+        name: "Microsoft Word",
+        icon: SiMicrosoftword,
+        color: "#2B579A",
+        category: "Outils",
+    },
 ];
 
 export default skills;

@@ -9,9 +9,9 @@ export const aboutDetails: DescriptiveButton[] = [
 		icon: BsLaptop,
 		name: "Développement web",
 		content:
-			"Dans le développement Web... Fabrice ne fait pas que coder, Il peut aussi faire le suivi des projets et son élaboration. Il va de la modélisation d'un système à sa mise en ligne. Il peut aussi faire la maintenace d'une application web ou d'un site web. Il fait plusieurs technologies et veut en apprendre encore plus. Dans la conception web, Fabrice peut faire le front et Backend d'un site Web.",
+			"Passionné par le web, je ne me limite pas au code : j’accompagne chaque projet de sa conception jusqu’à sa mise en ligne. J’interviens aussi bien sur le front-end que sur le back-end, en m’assurant de la cohérence, de la performance et de la maintenabilité des applications. Curieux de nature, je reste toujours à l’affût des dernières technologies pour proposer des solutions modernes et efficaces.",
 		subContent:
-			" HTML, Css3, Javascript, TypeScript, React, Nextjs",
+			"HTML, CSS3, JavaScript, TypeScript, React, Next.js",
 		mobileName: "Dév Web",
 	},
 	{
@@ -19,18 +19,18 @@ export const aboutDetails: DescriptiveButton[] = [
 		icon: BiMobileAlt,
 		name: "Développement mobile",
 		content:
-			"Tout comme pour le web, Fabrice fait la conception des applications mobiles. Il peut étudier, modéliser et concevoir le système pour une application. Et bien-sûr il peut aussi faire la maintenance de ce dernier.",
-		subContent: "React Native, flutter",
+			"Le développement mobile est pour moi un véritable terrain de création. J’aime concevoir des applications intuitives et performantes, du cahier des charges au déploiement sur les stores. Mon objectif : offrir une expérience fluide, agréable et cohérente sur tous les types d’écrans.",
+		subContent: "React Native, Flutter",
 		mobileName: "Dév Mob",
 	},
-		{
+	{
 		id: 2,
 		icon: MdDesignServices,
-		name: "Conception base des données",
+		name: "Conception de bases de données",
 		content:
-			"Dans le Domaine de base des données avec une solide expertise en MySQL et SQL, je maîtrise l'art de la gestion et de la manipulation des données. J'ai acquis une expérience approfondie la modélisation de bases données, la création de requêtes complexes, et l'optimisation des performances des systèmes de gestion de bases de données.",
+			"La donnée est le cœur de toute application. J’ai à cœur de concevoir des bases de données solides, bien structurées et optimisées. De la modélisation aux requêtes complexes, j’assure une gestion efficace des informations pour garantir fiabilité et performance.",
 		subContent:
-			"Mysql, Sql",
+			"MySQL, SQL",
 		mobileName: "Backend",
 	},
 ];

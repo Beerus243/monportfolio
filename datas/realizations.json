@@ -1,53 +1,52 @@
 [
 	{
 		"name": "Kelasi",
-		"description": "Ceci est un application web qui permet aux parents de suivre l'évolution scolaire de leurs enfants.",
+		"description": "Application web permettant aux parents de suivre en temps réel la progression scolaire de leurs enfants, avec un accès simplifié aux résultats et à la vie scolaire.",
 		"type": "Monopage",
-		"technologie": "HTML, CSS, Javascript, MySql, Php",
-		"link": "https://https://kelasi.vercel.app/",
+		"technologie": "HTML, CSS, Javascript, MySQL, PHP",
+		"link": "https://kelasi.vercel.app/",
 		"sourceCode": "https://github.com/",
 		"frame": "Pédagogique",
-		"status": "en dev"
+		"status": "En développement"
 	},
 	{
 		"name": "Rdv",
-		"description": "Ceci est un application de rencontre",
+		"description": "Application de rencontre moderne, pensée pour faciliter les connexions et les échanges entre utilisateurs dans un environnement sécurisé.",
 		"type": "Monopage",
 		"technologie": "Flutter, Firebase",
-		"link": " https://github.com/",
+		"link": "https://github.com/",
 		"sourceCode": "https://github.com/",
 		"frame": "Appli de Rencontre",
-		"status": "en dev"
+		"status": "En développement"
 	},
 	{
 		"name": "Rexal",
-		"description": "Ceci est un site pour la vente des Pop Corn",
+		"description": "Site e-commerce dédié à la vente de Pop Corn, avec une interface simple et efficace pour commander en ligne.",
 		"type": "Monopage",
-		"technologie": "HTML, CSS, Boostrap",
-		"link": "https://rexal.vercel.app//",
+		"technologie": "HTML, CSS, Bootstrap",
+		"link": "https://rexal.vercel.app/",
 		"sourceCode": "https://github.com/",
 		"frame": "Boutique",
-		"status": "Finis"
+		"status": "Terminé"
 	},
 	{
 		"name": "ZandoMarket",
-		"description": "Ceci est un MarketPlace",
+		"description": "Marketplace en ligne pour l’achat et la vente de produits variés, conçu pour offrir une expérience utilisateur fluide et sécurisée.",
 		"type": "Achat et Vente",
 		"technologie": "Next.js",
 		"link": "https://zandomarket-flax.vercel.app/",
 		"sourceCode": "https://github.com/Beerus243/",
 		"frame": "Personnel",
-		"status": "en dev"
+		"status": "En développement"
 	},
-
 	{
 		"name": "Fabrice Malanga",
-		"description": "Voici les codes sources de l'actuelle page ou vous êtes. Ceci est mon portefolio.",
+		"description": "Ce portfolio présente mon parcours, mes compétences et mes réalisations. Vous consultez actuellement cette application.",
 		"type": "Application web",
-		"technologie": "Next.js, typescript",
+		"technologie": "Next.js, TypeScript",
 		"link": "https://teddycubaka.vercel.app/",
 		"sourceCode": "https://github.com/Beerus243/portefolio.git",
 		"frame": "Professionnel",
-		"status": "en prod"
+		"status": "En production"
 	}
 ]
