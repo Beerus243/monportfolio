@@ -1,97 +1,59 @@
-import React, { useCallback, useEffect, useState } from "react";
-import { BsTelephone, BsCheckCircleFill, BsWhatsapp } from "react-icons/bs";
-import { FiCopy } from "react-icons/fi";
-import { SiGmail } from "react-icons/si";
+import { useState } from "react";
+import { BsWhatsapp, BsEnvelope, BsX, BsList } from "react-icons/bs";
 
-interface CopyType {
-  mail: boolean;
-  phone: boolean;
-}
+const navigation = [
+  { href: "#about", label: "À propos" },
+  { href: "#achievements", label: "Projets" },
+  { href: "#career", label: "Parcours" },
+  { href: "#skills", label: "Compétences" },
+];
 
 export default function Navbar() {
-  const [showContacts, setShowContacts] = useState(false);
-  const [copy, setCopy] = useState<CopyType>({
-    mail: false,
-    phone: false,
-  });
-  const [scrollingIsHeigh, setScrollingIsHeigh] = useState<boolean>(false);
-  const [scrollHeight, setY] = useState(0);
-
-  const handleNavigation = useCallback(
-    (e: any) => {
-      const window = e.currentTarget;
-      if (scrollHeight > (1 / 2) * window.screen.height) setScrollingIsHeigh(true);
-      else setScrollingIsHeigh(false);
-
-      setY(window.scrollY);
-    },
-    [scrollHeight]
-  );
-
-  useEffect(() => {
-    setY(window.scrollY);
-    window.addEventListener("scroll", handleNavigation);
-
-    return () => {
-      window.removeEventListener("scroll", handleNavigation);
-    };
-  }, [handleNavigation]);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className={"bg-white w-full h-[10vh] max-md:h-[70px] text-[#123853] sticky top-0 flex justify-between z-20 px-5 items-center max-md:px-3 my-0" + (scrollHeight > 100 ? " shadow" : "")} id="navbar">
-      <h1 className="font-bold text-3xl text-[#123853]">
-        {scrollHeight > 100 ?
-          <span className="shower_animation">Fabrice Malanga</span>
-          : ""}
-      </h1>
-      <div
-        onClick={() => {
-          if (!showContacts) setShowContacts(true)
-        }}
-        className="h-[50px] w-[50px] bg-[#123853] rounded-3xl text-white transition ease-in duration-500 flex justify-end items-start"
-      >
-        {
-          showContacts ? <div
-            onClick={() => { setShowContacts(false) }}
-            className="absolute top-0 z-[5] right-0 w-screen h-screen bg-transparent "
-          ></div> : null
-        }
-        {showContacts ? (
-          <div className="bg-[#123853] h-fit w-fit relative rounded-3xl z-50 flex flex-col items-end p-2.5">
-            <div className="text-white"><BsTelephone className="m-auto" size="30px" /></div>
-            <div className="z-50 p-2.5 flex flex-col gap-5">
-              <a
-                href="https://wa.me/243831115891"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-white"
-                onClick={() => {
-                  navigator.clipboard.writeText("+243 831 115 891");
-                  setCopy({ ...copy, phone: true });
-                  setTimeout(() => setCopy({ ...copy, phone: false }), 2000);
-                }}
-              >
-                <BsWhatsapp size={20} />
-                {copy.phone ? <BsCheckCircleFill size={20} /> : <FiCopy size={20} />}
-                +243 831 115 891{" "}
-              </a>
-              <a
-                href="mailto:malangafabrice@gmail.com"
-                className="flex items-center gap-3 text-white"
-                onClick={() => {
-                  navigator.clipboard.writeText("malangafabrice@gmail.com");
-                  setCopy({ ...copy, mail: true });
-                  setTimeout(() => setCopy({ ...copy, mail: false }), 2000);
-                }}
-              >
-                <SiGmail size={20} />
-                {copy.mail ? <BsCheckCircleFill size={20} /> : <FiCopy size={20} />}
-                malangafabrice@gmail.com{" "}
-              </a>
-            </div>
-          </div>
-        ) : <div className="h-[50px] w-[50px] flex justify-center items-center text-white"><BsTelephone className="m-auto" size="30px" /></div>}
-      </div>
+    <header className="site_header" id="navbar">
+      <nav className="site_nav" aria-label="Navigation principale">
+        <a className="site_brand" href="#header" onClick={() => setMenuOpen(false)}>
+          FM<span>.</span>
+        </a>
+
+        <div className="desktop_nav_links">
+          {navigation.map((item) => (
+            <a href={item.href} key={item.href}>{item.label}</a>
+          ))}
+        </div>
+
+        <a className="nav_contact" href="https://wa.me/243991760427" target="_blank" rel="noreferrer">
+          <BsWhatsapp aria-hidden="true" />
+          <span>WhatsApp</span>
+        </a>
+        <a className="nav_contact nav_email" href="mailto:malangafabrice@gmail.com" aria-label="Envoyer un e-mail à malangafabrice@gmail.com">
+          <BsEnvelope aria-hidden="true" />
+          <span>E-mail</span>
+        </a>
+
+        <button
+          className="mobile_menu_toggle"
+          type="button"
+          aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <BsX size={25} /> : <BsList size={25} />}
+        </button>
+      </nav>
+
+      {menuOpen && (
+        <div className="mobile_nav_panel" id="mobile-navigation">
+          {navigation.map((item) => (
+            <a href={item.href} key={item.href} onClick={() => setMenuOpen(false)}>{item.label}</a>
+          ))}
+          <a href="https://wa.me/243991760427" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)}>WhatsApp · +243 991 760 427</a>
+          <a href="mailto:malangafabrice@gmail.com" onClick={() => setMenuOpen(false)}>E-mail · malangafabrice@gmail.com</a>
+        </div>
+      )}
     </header>
   );
 }

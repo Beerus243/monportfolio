@@ -109,7 +109,7 @@ export function JobCard({ id, compagny, image, type, tasks, roles, period, achie
 
 function Jobs() {
   return (
-    <section className="about_card" id="career">
+    <section className="about_card" id="career-history">
       <h4 className="font-bold text-xl mb-5 text-[#123853]">Parcours professionnels</h4>
       {
         jobsData.map((job) => (

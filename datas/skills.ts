@@ -31,6 +31,9 @@ import {
     SiKalilinux,
     SiFlutter,
     SiDart,
+    SiNestjs,
+    SiFedora,
+    SiPopos,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 
@@ -100,6 +103,13 @@ const skills: LocalData[] = [
         category: "Langage",
         subcategory: "Back-end Framework",
     },
+    {
+        name: "NestJS",
+        icon: SiNestjs,
+        color: "#e0234e",
+        category: "Langage",
+        subcategory: "Back-end Framework",
+    },
 
     // Web
     {
@@ -160,6 +170,18 @@ const skills: LocalData[] = [
         name: "Kali Linux",
         icon: SiKalilinux,
         color: "#557C94",
+        category: "Système",
+    },
+    {
+        name: "Fedora",
+        icon: SiFedora,
+        color: "#51a2da",
+        category: "Système",
+    },
+    {
+        name: "Pop!_OS",
+        icon: SiPopos,
+        color: "#48b9c7",
         category: "Système",
     },
 

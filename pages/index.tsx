@@ -2,48 +2,21 @@ import Head from "next/head";
 import Navbar from "../components/navbar";
 import Main from "../components/main";
 import About from "../components/about";
-import Skills from "../components/skills";
 import Achievement from "../components/achievement";
 import Career from "../components/career";
 import Footer from "../components/footer";
 import { BiArrowToTop } from "react-icons/bi";
-import { useCallback, useEffect, useState } from "react";
-import { Link } from "react-scroll";
 import ScrollToTop from "react-scroll-up";
 import SkillsSection from "../components/SkillsSection";
 
 export default function Home() {
-  const [scrollingIsHeigh, setScrollingIsHeigh] = useState<boolean>(false);
-
-  const [y, setY] = useState(0);
-
-  const handleNavigation = useCallback(
-    (e: any) => {
-      const window = e.currentTarget;
-      if (y > (1 / 2) * window.screen.height) setScrollingIsHeigh(true);
-      else setScrollingIsHeigh(false);
-
-      setY(window.scrollY);
-    },
-    [y]
-  );
-
-  useEffect(() => {
-    setY(window.scrollY);
-    window.addEventListener("scroll", handleNavigation);
-
-    return () => {
-      window.removeEventListener("scroll", handleNavigation);
-    };
-  }, [handleNavigation]);
-
   return (
     <>
       <Head>
-        <title>Fabrice Malanga</title>
+        <title>Fabrice Malanga — Développeur web & mobile</title>
         <meta
           name="description"
-          content="Fabrice Malanga est Un développeur web et web mobile de Kinshasa-RD Congo. Fabrice, un développeur fullstack, peut concevoir des systèmes informatiques, développer des solutions web, des applications mobiles et bien plus. "
+          content="Fabrice Malanga, développeur web et mobile à Kinshasa, conçoit des expériences numériques claires et performantes, du concept à la mise en ligne."
         />
         <meta name="title" content="Portefolio developpeur fullstack" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

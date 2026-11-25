@@ -19,7 +19,7 @@ export default function Footer() {
 					<BsLinkedin size="30" />{" "}
 				</a>
 			</div>
-			<div>copyright@2025</div>
+			<div>© {new Date().getFullYear()} Fabrice Malanga</div>
 		</footer>
 	);
 }
