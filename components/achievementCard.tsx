@@ -1,6 +1,6 @@
-import React from "react";
 import { RiCodeSLine } from "react-icons/ri";
 import { IoOpenOutline } from "react-icons/io5";
+import ProjectPreview from "./projectPreview";
 
 interface Achievement {
   achievement: {
@@ -12,46 +12,43 @@ interface Achievement {
     sourceCode: string;
     frame: string;
     status: string;
+    previewImage?: string;
   };
 }
 
-type LocalStatus = {
-  status: string;
-};
-
 export default function AchievementCard({ achievement }: Achievement) {
   return (
-    <div className="w-full h-auto border border-solid border-[#123853] flex flex-col items-center p-4 rounded-md max-md:gap-2.5">
-      <div className="space_between w_max">
-        <div className="font-medium flex items-center text-[#123853]">
-          {" "}
-          {achievement.name}{" "}
+    <article className="achievement_project_card">
+      <ProjectPreview
+        name={achievement.name}
+        previewImage={achievement.previewImage}
+      />
+      <div className="achievement_project_heading">
+        <div className="achievement_project_title">
+          <h3>{achievement.name}</h3>
+          <span className="achievement_type">{achievement.type}</span>
         </div>
-
-        <span className="border border-[#123853cb] px-2 py-1 rounded-2xl flex items-center gap-2.5 text-sm hover:bg-[#123853cb] hover:text-white transition ease-in duration-500 cursor-default">{achievement.status}</span>
+        <span className="achievement_status">{achievement.status}</span>
       </div>
-      <div className="w_max"> {achievement.description} </div>
-      <div className="flex justify-between w-full">
-        {achievement.link.length > 1 ? (
-          <a className="w-full underline flex flex-row items-center justify-center gap-2 " href={achievement.link}>
-            {" "}
-            <IoOpenOutline /> Site web
+      <p className="achievement_description">{achievement.description}</p>
+      <div className="achievement_project_links">
+        {achievement.link.length > 1 && achievement.link !== "https://github.com/" ? (
+          <a href={achievement.link} target="_blank" rel="noreferrer">
+            <IoOpenOutline aria-hidden="true" /> Site web
           </a>
         ) : (
-          <span className="w-full flex flex-row items-center justify-center gap-2 ">
-            <IoOpenOutline />
-            Site indisponible
-          </span>
+          <span><IoOpenOutline aria-hidden="true" /> Site indisponible</span>
         )}
-        <a className="w-full underline flex flex-row items-center justify-center gap-2 " href={achievement.sourceCode}>
-          {" "}
-          <RiCodeSLine /> Code source
-        </a>
+        {achievement.sourceCode.length > 1 && achievement.sourceCode !== "https://github.com/" && (
+          <a href={achievement.sourceCode} target="_blank" rel="noreferrer">
+            <RiCodeSLine aria-hidden="true" /> Code source
+          </a>
+        )}
       </div>
-      <div className="space_between small w_max">
-        <span> {achievement.technologie} </span>
-        <span className="color_blue meddium"> {achievement.frame} </span>
+      <div className="achievement_project_meta">
+        <span>{achievement.technologie || achievement.type}</span>
+        <span>{achievement.frame}</span>
       </div>
-    </div>
+    </article>
   );
 }

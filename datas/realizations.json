@@ -1,18 +1,52 @@
 [
 	{
-		"name": "Kelasi",
-		"description": "Application web permettant aux parents de suivre en temps réel la progression scolaire de leurs enfants, avec un accès simplifié aux résultats et à la vie scolaire.",
-		"type": "Monopage",
-		"technologie": "HTML, CSS, Javascript, MySQL, PHP",
-		"link": "https://kelasi.vercel.app/",
-		"sourceCode": "https://github.com/",
-		"frame": "Pédagogique",
-		"status": "En développement"
+		"name": "Woubou",
+		"description": "ERP pour centraliser les opérations de l’entreprise et simplifier la gestion des processus métier.",
+		"type": "ERP",
+		"technologie": "",
+		"link": "https://woubou.com/",
+		"sourceCode": "",
+		"frame": "Gestion d’entreprise",
+		"status": "En ligne",
+		"previewImage": "/woubou-home.webp"
+	},
+	{
+		"name": "DRC Sky Agency",
+		"description": "Partez à la découverte d’un tourisme responsable avec nos guides éthiques, destinations écoresponsables et conseils pour voyager autrement.",
+		"type": "Application web",
+		"technologie": "",
+		"link": "https://drc-sky-agency.vercel.app/",
+		"sourceCode": "",
+		"frame": "Tourisme responsable",
+		"status": "En ligne",
+		"previewImage": "/drc-sky-home.webp"
+	},
+	{
+		"name": "Tokutana",
+		"description": "Découvrez notre plateforme complète de gestion d'événements : créez, organisez et gérez facilement tous vos événements professionnels ou personnels en ligne.",
+		"type": "Application web",
+		"technologie": "",
+		"link": "https://tokutana.vercel.app/",
+		"sourceCode": "",
+		"frame": "Gestion d’événements",
+		"status": "En ligne",
+		"previewImage": "/tokutana-home.png"
+	},
+	{
+		"name": "Fabrice Malanga",
+		"description": "Ce portfolio présente mon parcours, mes compétences et mes réalisations. Vous consultez actuellement cette application.",
+		"type": "Application web",
+		"technologie": "Next.js, TypeScript",
+		"link": "https://malangafabrice.vercel.app/",
+		"sourceCode": "https://github.com/Beerus243/portefolio.git",
+		"frame": "Professionnel",
+		"status": "En production",
+		"previewImage": "/portfolio-home.webp"
 	},
 	{
 		"name": "Rdv",
 		"description": "Application de rencontre moderne, pensée pour faciliter les connexions et les échanges entre utilisateurs dans un environnement sécurisé.",
-		"type": "Monopage",
+		"type": "Application mobile",
 		"technologie": "Flutter, Firebase",
 		"link": "https://github.com/",
 		"sourceCode": "https://github.com/",
@@ -20,19 +54,9 @@
 		"status": "En développement"
 	},
 	{
-		"name": "Rexal",
-		"description": "Site e-commerce dédié à la vente de Pop Corn, avec une interface simple et efficace pour commander en ligne.",
-		"type": "Monopage",
-		"technologie": "HTML, CSS, Bootstrap",
-		"link": "https://rexal.vercel.app/",
-		"sourceCode": "https://github.com/",
-		"frame": "Boutique",
-		"status": "Terminé"
-	},
-	{
 		"name": "ZandoMarket",
 		"description": "Marketplace en ligne pour l’achat et la vente de produits variés, conçu pour offrir une expérience utilisateur fluide et sécurisée.",
-		"type": "Achat et Vente",
+		"type": "Application mobile",
 		"technologie": "Next.js",
 		"link": "https://zandomarket-flax.vercel.app/",
 		"sourceCode": "https://github.com/Beerus243/",
@@ -40,13 +64,25 @@
 		"status": "En développement"
 	},
 	{
-		"name": "Fabrice Malanga",
-		"description": "Ce portfolio présente mon parcours, mes compétences et mes réalisations. Vous consultez actuellement cette application.",
-		"type": "Application web",
-		"technologie": "Next.js, TypeScript",
-		"link": "https://teddycubaka.vercel.app/",
-		"sourceCode": "https://github.com/Beerus243/portefolio.git",
-		"frame": "Professionnel",
-		"status": "En production"
+		"name": "Rexal",
+		"description": "Site e-commerce dédié à la vente de Pop Corn, avec une interface simple et efficace pour commander en ligne.",
+		"type": "Site web",
+		"technologie": "HTML, CSS, Bootstrap",
+		"link": "https://rexal.vercel.app/",
+		"sourceCode": "https://github.com/",
+		"frame": "Boutique",
+		"status": "Ancien projet",
+		"previewImage": "/rexal-home.png"
+	},
+	{
+		"name": "Kelasi",
+		"description": "Application web permettant aux parents de suivre en temps réel la progression scolaire de leurs enfants, avec un accès simplifié aux résultats et à la vie scolaire.",
+		"type": "Site web",
+		"technologie": "HTML, CSS, Javascript, MySQL, PHP",
+		"link": "https://kelasi.vercel.app/",
+		"sourceCode": "https://github.com/",
+		"frame": "Pédagogique",
+		"status": "Ancien projet",
+		"previewImage": "/kelasi-home.png"
 	}
 ]
