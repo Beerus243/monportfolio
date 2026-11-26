@@ -14,6 +14,7 @@ const previewTypes: Record<string, string> = {
   "Fabrice Malanga": "portfolio",
   "DRC Sky Agency": "travel",
   Tokutana: "portfolio",
+  RCOM: "corporate",
 };
 
 function BrowserFrame({ children, address }: { children: ReactNode; address: string }) {
@@ -85,6 +86,16 @@ function TravelPreview() {
   </BrowserFrame>;
 }
 
+function CorporatePreview() {
+  return <BrowserFrame address="rcom-five.vercel.app">
+    <div className="preview_site preview_rcom">
+      <div className="preview_site_nav"><b>R<span>·</span>COM</b><span>Catalogue</span><span>Solutions</span><span>À propos</span><button>Demander un devis　↗</button></div>
+      <div className="preview_rcom_body"><div><small>ÉQUIPEMENTS &amp; SOLUTIONS PROFESSIONNELS</small><strong>Les bons équipements.<br /><em>Les bons projets.</em></strong><span>Des solutions concrètes pour les équipes, les sites et les opérations.</span><button>Découvrir RCOM　↗</button></div><div className="preview_rcom_art"><div className="preview_rcom_art_top"><span>INFRASTRUCTURE</span><b>01 — 06</b></div><div className="preview_rcom_art_blocks"><i /><i /><i /><i /><i /><i /></div><div className="preview_rcom_art_base"><span>CONNECTER</span><span>ÉQUIPER</span><span>PROTÉGER</span></div></div></div>
+      <div className="preview_rcom_footer"><span>IT &amp; RÉSEAUX</span><span>SÉCURITÉ</span><span>ÉNERGIE</span><span>AMÉNAGEMENT</span></div>
+    </div>
+  </BrowserFrame>;
+}
+
 const previews: Record<string, () => JSX.Element> = {
   education: EducationPreview,
   rdv: DatingPreview,
@@ -93,6 +104,7 @@ const previews: Record<string, () => JSX.Element> = {
   market_mobile: MarketPreview,
   portfolio: PortfolioPreview,
   travel: TravelPreview,
+  corporate: CorporatePreview,
 };
 
 export default function ProjectPreview({ name, previewImage }: ProjectPreviewProps) {

@@ -11,6 +11,16 @@
 		"previewImage": "/woubou-home.webp"
 	},
 	{
+		"name": "RCOM",
+		"description": "Plateforme B2B de démonstration pour découvrir des équipements et solutions professionnels en informatique, réseaux, sécurité, énergie, climatisation et mobilier.",
+		"type": "Plateforme web B2B",
+		"technologie": "Next.js, TypeScript, Tailwind CSS",
+		"link": "https://rcom-five.vercel.app/",
+		"sourceCode": "https://github.com/Beerus243/rcom",
+		"frame": "Solutions professionnelles",
+		"status": "En ligne"
+	},
+	{
 		"name": "DRC Sky Agency",
 		"description": "Partez à la découverte d’un tourisme responsable avec nos guides éthiques, destinations écoresponsables et conseils pour voyager autrement.",
 		"type": "Application web",
